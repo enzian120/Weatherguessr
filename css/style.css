@@ -1,0 +1,112 @@
+@keyframes fadein {
+    from{opacity: 0;filter: blur(8px);}
+    to{opacity: 1;filter: blur(0px);}
+}
+@keyframes fadein2 {
+    from{opacity: 0;filter: blur(0px);}
+    to{opacity: 1;filter: blur(0px);}
+}
+body{
+    animation-name: fadein;
+    animation-duration: 3s;
+    height: 120vh;
+    background: rgb(31,34,104);
+    background: linear-gradient(180deg, rgba(31,34,104,1) 0%, rgba(34,165,183,1) 96%);
+}
+
+.c{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    img{
+        max-width:50%;
+        max-height:50%;
+    }
+}
+h1{
+    animation-name: fadein2;
+    animation-duration: 1s;
+    margin-top: 0px;
+    color: white;
+    font-size: 100px;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.fuzzy-bubbles-regular {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .fuzzy-bubbles-bold {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+#round-dark{
+    background-color:rgba(0,0,0,0.5) ;
+    border-radius:15px ;
+    border-color: rgba(0,0,0,0);
+}
+
+.round-dark{
+    background-color:rgba(0,0,0,0.5) ;
+    border-radius:15px ;
+    border-color: rgba(0,0,0,0);
+}
+
+.c2{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sunshower{
+    width: 200px;
+    height: auto;
+}
+
+button{
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    width: 400px;
+    height: 100px;
+    transition-duration: 1s;
+    font-size: 50px;
+}
+
+input{
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+
+button:hover{
+    transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 800px) {
+    h1{
+        font-size: 20px;
+    }
+    img{
+        max-width:10%;
+        max-height:10%;
+    }
+    }
